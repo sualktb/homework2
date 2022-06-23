@@ -4,13 +4,13 @@
 <title>Eventsy - Home</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://use.fontawesome.com/faeb742d65.js"></script>
 </head>
 <body>
 <section class="hero-image">
-  <nav class="topnav" class="myTopnav"> 
-
-    <ul class="hlist">
-      <a href="" class="logo">eventsy</a>
+  <nav> 
+    <ul>
+      <a href="index.html" class="logo">eventsy</a>
       <li><a href="#">contact</a></li>
       <li><a href="#">blog</a></li>
       <li><a href="#">gallery</a></li>
@@ -19,45 +19,76 @@
     </ul>
   </nav>
   <div class="hero-text">
-    <h1>Header goes here</h1>
-    <h3>Less important text goes here</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Fugiat aliquid minus nemo sed est. </p>
+    <h1 class="pt-serif-header text-white">Header goes here</h1>
+    <h3 class="gillSans-20 text-red">Less important text goes here</h3>
+  <p class="gillSans-20 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Fugiat aliquid minus nemo sed est. </p>
   <a href="" class="btn-main">Read More</a>
   </div>
 </section>
+
 <section class="main-quote">
-  <p class="quote-text">“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Iste natus error sit voluptatem accusantium doloremque laudantium totam</p>
+  <p class="gillSans-20 text-yellow">“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Iste natus error sit voluptatem accusantium doloremque laudantium totam</p>
   <p class="author">John Smith</p>
   <p class="author-role">Corporation CEO, books author</p>
 </section>
 <section class="upcoming">
  <div class="container">
-   <h2 class="md-center text-uppercase">upcoming events:</h2>
+   <h2 class="upcoming-header text-uppercase">upcoming events:</h2>
    <hr class="belowText">
-  <div class="summaryBlog">
-    <h3 class="text-white">Sed et persipiatis</h3>
-    <p class="text-pink">Lorem ipsum dolor sit amet</p>
-  </div>
 
-  <div class="summaryBlog">
-    <h3 class="text-white">Sed et persipiatis</h3>
-    <p class="text-pink">Lorem ipsum dolor sit amet</p>
-  </div>
+   <div class="events">
+    <div class="event">
+      <div class="date">
+        <span class="day">06</span>
+        <span class="month">JUN</span>
+      </div>
+      <div class="event-details">
+        <p clss="highlight">Sed et persipiatis </p>
+        <p class="details">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="date">
+        <span class="day">30</span>
+        <span class="month">JUL</span>
+      </div>
+      <div class="event-details">
+        <p clss="highlight">Sed et persipiatis </p>
+        <p class="details">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="date">
+        <span class="day">30</span>
+        <span class="month">AUG</span>
+      </div>
+      <div class="event-details">
+        <p clss="highlight">Sed et persipiatis </p>
+        <p class="details">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="date">
+        <span class="day">23</span>
+        <span class="month">NOV</span>
+      </div>
+      <div class="event-details">
+        <p clss="highlight">Sed et persipiatis </p>
+        <p class="details">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="date">
+        <span class="day">23</span>
+        <span class="month">DEC</span>
+      </div>
+      <div class="event-details">
+        <p clss="highlight">Sed et persipiatis </p>
+        <p class="details">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </div>
+   </div>
 
-  <div class="summaryBlog">
-    <h3 class="text-white">Sed et persipiatis</h3>
-    <p class="text-pink">Lorem ipsum dolor sit amet</p>
-  </div>
-
-  <div class="summaryBlog">
-    <h3 class="text-white">Sed et persipiatis</h3>
-    <p class="text-pink">Lorem ipsum dolor sit amet</p>
-  </div>
-
-  <div class="summaryBlog">
-    <h3 class="text-white">Sed et persipiatis</h3>
-    <p class="text-pink">Lorem ipsum dolor sit amet</p>
-  </div>
 
  </div>
 </section>
@@ -70,9 +101,15 @@
   <p>(213)-467-2627</p>
   <p>info@eventsy.com</p>
   <p>
-    <form>
-      <input type="text" placeholder="Enter your email to join newsletter…">
-    </form>
+    <div class="input-wrapper">
+      <input class="text-field" type="text" placeholder="Enter your email to join newsletter…">
+      <div class="button text-red">SUBSCRIBE</div>
+    </div>
+  </p>
+  <p>
+    <i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>
+    <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+    <i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i>
   </p>
   <p> Copyright 2022 eventsy. All rights reserved. </p>
 </footer>

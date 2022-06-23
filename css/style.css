@@ -1,14 +1,27 @@
 body {
   height: 100%;
-  margin: 0;
+  margin: 0 auto;
   width: 100%;
+}
+@font-face {
+font-family: "GillSans";
+src: url("../fonts/GillSans-Bold.ttf");
+}
+@font-face {
+font-family: "PTSerif-Regular";
+src: url("../fonts/PTSerif-Regular.ttf");
+}
+nav {
+  height: 150px;
+  max-width: 992px;
+  margin: 0 auto;
 }
 nav ul {
   list-style-type: none;
   margin: 0;
   overflow: hidden;
   padding: 0;
-  background-color: transparent;
+  border-bottom: 2px solid #fff;
 }
 
 nav li {
@@ -17,13 +30,46 @@ nav li {
 
 nav li a {
   display: block;
-  color: white;
+  color: #fff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: GillSans;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.pt-serif-header {
+  font-family: PTSerif-Regular;
+  font-size: 40px;
+}
+
+.gillSans-20 {
+  font-family: GillSans;
+  font-size: 20px;
+}
+.text-red {
+  color: #EE4367;
+}
+
+.text-white {
+  color: #fff;
+}
+.gillSans-15 {
+  font-family: GillSans;
+  font-size: 15px;
+}
+.text-pink {
+  color: #EE4367;
+}
+.text-yellow {
+  color: #FFD140;
+}
+.text-uppercase {
+  text-transform: uppercase;
 }
 .hero-image {
-  background-image: linear-gradient(rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url("../images/hero.jpg");
+  background-image: linear-gradient(rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url("../images/home-hero.jpg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -32,11 +78,11 @@ nav li a {
   position: relative;
 }
 .hero-text {
+  width: 715px;
+  margin: 0 auto;
   text-align: center;
-  font-family: PT serif;
   top: 10%;
   left: 50%;
-  color: white;
 }
 .logo{
   display:inline-block;
@@ -48,15 +94,7 @@ nav li a {
   text-decoration: none;
 }
 
-.text-white {
-  color: white;
-}
-.text-pink {
-  color: #EE4367;
-}
-.text-uppercase {
-  text-transform: uppercase;
-}
+
 
 hr.belowText {
   border: 1px solid white;
@@ -77,44 +115,92 @@ hr.belowText {
   display: inline-block;
   font-size: 16px;
 }
-.hero-text h3 {
-  color: #EE4367;
-}
 .main-quote {
   padding: 50px 0px 50px 50px;
-  text-align: center;
-  width: 80%;
-  font-family: Gill Sans;
-}
-.quote-text {
-  font-size: 20px;
-  font-weight: bold;
-  font-family: Sans; 
+  width: 780px;
+  margin: 0 auto;
+  font-family: GillSans;
 }
 .author {
-  font-size: 16px;
-  font-family: sans-serif;
+  font-size: 15px;
+  font-family: PTSerif-Regular;
   color: #EE4367;
   text-align: left;
 }
 
 .author-role {
-  font-size: 12px;
-  font-family: arial;
+  font-size: 10px;
+  color: #A8A8A8;
+  font-family: PTSerif-Regular;
   text-align: left;
 }
 
 .upcoming {
+  height: 320px;
   background-color: #540D6E;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 20px;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+
+.upcoming-header {
+  font-size: 25px;
+  font-family: GillSans;
 }
 .container{
   position: relative;
   padding-left: 20px;
 }
 
+.events {
+  height: 125px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.event {
+  width: 210px;
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+
+}
+
+.event .date {
+  width: 60px;
+  height: 60px;
+  font-family: GillSans;
+  background-color: #EE4367;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.event .date .day {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 22px;
+}
+.event .date .month {
+  font-size: 12px;
+  position: absolute;
+  top: 28px;
+  right: 15px;
+}
+.event .event-details {
+  width: 140px;
+  margin-top: -10px;
+  font-family: GillSans;
+}
+.details {
+  font-size: 13px;
+  color: #EE4367;
+}
+.highlight {
+  font-size: 15px;
+}
 .summaryBlog{
   width: 18%;
   display: inline-block;
@@ -135,5 +221,33 @@ hr.belowText {
   font-weight: bold;
   padding: 30px;
   margin-top: -22px;
+  font-family: GillSans
+}
+
+.input-wrapper {
+  display: flex;
+  position: relative;
+  height: 60px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.input-wrapper input {
+  height: 100%;
+  background-color: #F56B88;
+  width: 530px;
+  border: none;
+  font-family: GillSans;
+  font-size: 16px;
+}
+
+.input-wrapper .button {
+  height: 100%;
+  background-color: #fff;
+}
+
+.button {
+  padding: 18px 5px;
+  width: 167px;
+  box-sizing: border-box;
 }
 
